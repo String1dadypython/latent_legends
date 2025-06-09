@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Customer Care Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="chat-container">
+    <header>
+      <h2>AI Customer Care</h2>
+      <button id="customize-btn" title="Customize Theme">🛠️</button>
+      <button id="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
+      <button id="close-btn" title="Close Chat">✖️</button>
+    </header>
+
+    <div id="chat-history"></div>
+
+    <div id="input-area">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+      <button id="voice-btn" title="Voice Input">🎤</button>
+      <button id="send-btn" title="Send Message">➡️</button>
+      <button id="clear-btn" title="Clear Chat">🗑️</button>
+    </div>
+
+    <div id="customize-panel" style="display:none;">
+      <h3>Customize Theme</h3>
+      <label for="color-picker-input">Pick Primary Color:</label>
+      <input type="color" id="color-picker-input" value="#3f51b5" />
+      
+      <label for="font-picker">Choose Font:</label>
+      <select id="font-picker">
+        <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe UI (Default)</option>
+        <option value="'Arial', sans-serif">Arial</option>
+        <option value="'Courier New', Courier, monospace">Courier New</option>
+        <option value="'Georgia', serif">Georgia</option>
+        <option value="'Comic Sans MS', cursive, sans-serif">Comic Sans MS</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
